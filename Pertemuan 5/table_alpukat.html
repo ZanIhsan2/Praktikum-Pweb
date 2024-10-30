@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_alpukat</title>
+    <style>
+        .table{
+            background-color: rgb(152, 128, 66);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 60vh;
+            margin: 0px;
+            li.E{
+                font-family: cursive;
+                font-weight: bold;
+            }
+            p.Ve{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: left;
+            }
+            .aa{
+                font-weight: bold;
+            }
+        }
+        .zigzag-container{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .zigzag-item{
+            flex: 1;
+            padding: 15px;
+            color: #fff;
+            text-align: left;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        .zigzag-item:nth-child(odd) {
+            transform: translateY(-100px); /* geser ke atas */
+        }
+        .zigzag-item:nth-child(even) {
+            transform: translateY(100px); /* geser ke bawah */
+        }
+    </style>
+</head>
+<body>
+    <h3>Berikut khasiat buah Alpukat:</h3>
+    <div class="zigzag-container">
+            <ol class="table">
+                <div class="zigzag-item">
+                <li class="E">Vitamin E 
+                </li>
+                <p class="Ve">Memiliki <span class="aa"><i>anti aging</i></span> yang bisa <br> mendorong
+                    perawatan kulit alami</p>
+                </div>
+                <div class="zigzag-item">    
+                <li class="E">Vitamin K
+                </li>
+                <p class="Ve">Membantu <span class="aa"><i>mencegah</i></span> <br> terjadinya osteoporosis</p>
+                </div>
+                <div class="zigzag-item">
+                <li class="E">Viitamin B5
+                </li>
+                <p class="Ve">Membantu <span class="aa"><i>menurunkan</i></span> tingkat <br> stress, meringankan rasa sakit</p>
+                </div>
+                <div class="zigzag-item">
+                <li class="E">Vitamin B6
+                </li>
+                <p class="Ve">Membantu <span class="aa"><i>treat diabetes,</i></span> <br> pendarahan menstruasi, insomnia
+                </p>
+                </div>
+            </ol>
+    </div>        
+</body>
+</html>
